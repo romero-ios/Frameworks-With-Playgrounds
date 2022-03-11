@@ -3,14 +3,14 @@ import UIKit
 import Foundation
 
 // ----------------------------------------
-// The below works when executed from their individual schemes, or the App Scheme
-//
-//import AppStaticFramework
-//AppStaticFramework().doSomething()
+// The below works when App scheme is built, which results in these modules being build and available in the Build/Products/ directory
+// Individually building them seems to be hit and miss... Although the static libary seems to never work when built individually.
+import AppStaticFramework
+AppStaticFramework().doSomething()
 
-//import AppStaticLibrary
-//AppStaticLibrary().doSomething()
-//
+import AppStaticLibrary
+AppStaticLibrary().doSomething()
+
 // ----------------------------------------
 
 // ----------------------------------------
